@@ -1,0 +1,92 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+.bubblecard {
+
+}
+.bubblecard {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 20px inset #E91E63;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  .bubblecard-content {
+    position: relative;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: rgba(233, 30, 99, 0.2);
+    h2 {
+      color: #FFF176;
+      font-family: "Lobster", cursive;
+      text-shadow: 2px 8px 8px #000;
+    }
+    p {
+      color: white;
+      font-weight: bold;
+      font-size: 1.6em;
+      text-shadow: 1px 4px 4px #333;
+    }
+    a {
+      font-family: "Lobster", cursive;
+      font-size: 1.2em;
+      font-weight: bold;
+      position: absolute;
+      background-color: #930e3b;
+      padding: 20px 0;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      color: #FFF176;
+      box-shadow: 1px 4px 4px #333;
+      &:hover {
+        text-decoration: none;
+      }
+      &.github {
+        right: 50px;
+        bottom: -20px;
+      }
+      &.link {
+        right: -20px;
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bubblecard {
+    background-size: 300px 300px;
+    height: 300px;
+    width: 300px;
+    .bubblecard-content {
+      height: 260px;
+      width: 260px;
+      padding: 10px;
+      h2 {
+        margin: 10px 0;
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      a {
+        height: 56px;
+        width: 56px;
+        padding: 14px 0;
+        &.github {
+          right: 30px;
+          bottom: -20px;
+        }
+        &.link {
+          right: -20px;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
