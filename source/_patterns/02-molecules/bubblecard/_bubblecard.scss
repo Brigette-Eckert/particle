@@ -1,14 +1,27 @@
 // All component Sass needs non-printing base config
 @import '../../00-protons/variables';
 
-.bubblecard {
+$new-colors:(
+  "pink": #E91E63,
+  "chartreuse": #7FFF00,
+  "green": #4E9353,
+  "blue": #43BCCD,
+  "purple": #B10DC9
+);
+
+$themes: map-merge($new-colors, $colors);
+
+
+.bubblecards {
+  background-color: #222;
+  padding: 20px;
 
 }
+
 .bubblecard {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  border: 20px inset #E91E63;
   margin: 20px;
   background-position: center;
   background-size: cover;
@@ -19,7 +32,6 @@
     border-radius: 50%;
     padding: 20px 30px;
     text-align: center;
-    background-color: rgba(233, 30, 99, 0.2);
     h2 {
       color: #FFF176;
       font-family: "Lobster", cursive;
@@ -36,7 +48,6 @@
       font-size: 1.2em;
       font-weight: bold;
       position: absolute;
-      background-color: #930e3b;
       padding: 20px 0;
       width: 70px;
       height: 70px;
@@ -53,6 +64,19 @@
       &.link {
         right: -20px;
         bottom: 50px;
+      }
+    }
+  }
+}
+
+@each $key, $val in $new-colors {
+  .bubblecard.theme-#{$key} {
+    border: 20px inset $val;
+    .bubblecard-content {
+      background-color: rgba($val, 0.2);
+      a {
+        //background-color: #930e3b;
+        background-color: darken($val, 20%);
       }
     }
   }
