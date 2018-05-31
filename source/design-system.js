@@ -17,6 +17,7 @@ import * as carousel from 'molecules/carousel';
 import * as exampleWidget from 'molecules/example-widget';
 import * as jumbotron from 'molecules/jumbotron';
 import * as pagination from 'molecules/pagination';
+import * as bubblecard from 'molecules/bubblecard';
 import * as accordion from 'organisms/accordion';
 import * as article from 'organisms/article';
 import * as footer from 'organisms/footer';
@@ -39,6 +40,7 @@ const components = {
   exampleWidget,
   jumbotron,
   pagination,
+  bubblecard,
   accordion,
   article,
   footer,
