@@ -1,15 +1,13 @@
 // All component Sass needs non-printing base config
 @import '../../00-protons/variables';
-$primary-color: #E91E63;
-$primary-color-dark: darken($primary-color, 20%);
+$gradient-color: #E91E63;
+$gradient-color-dark: darken($gradient-color, 20%);
 
 .gradienttag {
   padding: 4px;
   font-size: 1.2em;
   margin: 4px;
-  background: linear-gradient($primary-color-dark, $primary-color);
-  color: white;
-  border-radius:5px;
+  border-radius: 5px;
   display: inline;
   width: fit-content;
 }

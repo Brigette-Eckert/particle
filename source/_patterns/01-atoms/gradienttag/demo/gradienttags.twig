@@ -1,3 +1,24 @@
-<h1>Gradient Tags </h1>
 
-{% include '@atoms/_gradienttag.twig' %}
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Gradient Tags</h1>
+
+      <h5> One Color Light to Dark </h5>
+      <div>
+          {% include '@atoms/_gradienttag.twig' with gradienttag1 %}
+          {% include '@atoms/_gradienttag.twig' with gradienttag2 %}
+      </div>
+
+      <h5> Multiple Different Colors </h5>
+    <div>
+        {% include '@atoms/_gradienttag.twig' with gradienttag3 %}
+        {% include '@atoms/_gradienttag.twig' with gradienttag4 %}
+    </div>
+
+
+
+
+  {% endblock column_1 %}
+

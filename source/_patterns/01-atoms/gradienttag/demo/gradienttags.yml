@@ -1,1 +1,26 @@
-gradienttag: ''
+gradienttag1:
+  text: 'Hello World'
+  gradient_color1: '#E91E63'
+  gradient_color2: '#B60030'
+  text_color: 'white'
+
+gradienttag2:
+  text: 'This is a gradient tag'
+  gradient_color1: '#0b760d'
+  gradient_color2: '#002A00 '
+  text_color: 'yellow'
+
+gradienttag3:
+  text: 'I <3 Cats'
+  gradient_color1: 'blue'
+  gradient_color2: 'purple'
+  text_color: 'silver'
+
+
+
+gradienttag4:
+  text: 'Cupcakes'
+  gradient_color1: 'orange'
+  gradient_color2: 'red'
+  text_color: 'black'
+
