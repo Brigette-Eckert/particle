@@ -66,6 +66,7 @@ plugins:
           - ../../../source/_patterns/01-atoms/dropdown
           - ../../../source/_patterns/01-atoms/breadcrumb
           - ../../../source/_patterns/01-atoms/list-group
+          - ../../../source/_patterns/01-atoms/gradienttag
       molecules:
         paths:
           - ../../../source/_patterns/02-molecules
