@@ -9,7 +9,12 @@
  */
 #}
 
-<div class="bubblecard" style="background-image: url('{{image}}')">
+{% set bubblecard_classes = [
+  'bubblecard',
+  theme ? 'theme-' ~ theme
+] | sort | join(' ') | trim %}
+
+<div class="{{ bubblecard_classes }}" style="background-image: url('{{image}}')">
   <div class="bubblecard-content">
     <h2>{{title}}</h2>
     <p>{{description}}</p>

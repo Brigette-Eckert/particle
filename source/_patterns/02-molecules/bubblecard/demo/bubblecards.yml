@@ -1,6 +1,33 @@
 bubblecard1:
   title: 'Dungeon Game'
-  description: 'Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.'
+  description: 'Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up.'
   github_link: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15'
   demo_link: 'https://codepen.io/LawlietBlack/full/JGBazL'
   image: 'http://lawlietblack.com/img/projects/roguelike.png'
+  theme: 'pink'
+
+bubblecard2:
+  title: 'DEFINITELY Real Quotes'
+  description: 'Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.'
+  github_link: 'https://github.com/LawlietBlack/real-quotes'
+  demo_link: 'https://definitely-real-quotes.herokuapp.com/'
+  image: 'http://lawlietblack.com/img/projects/quotes.png'
+  theme: 'purple'
+
+bubblecard3:
+  title: 'Pokedex'
+  description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.'
+  github_link: ''
+  demo_link: ''
+  image: 'http://lawlietblack.com/img/projects/pokedex.png'
+  theme: 'green'
+
+
+bubblecard4:
+  title: 'Conway`s Game of Life'
+  description: 'Conway`s game of life with grid size, generation speed, pause/play, and randomize functionality.'
+  github_link: ''
+  demo_link: ''
+  image: 'http://lawlietblack.com/img/projects/life.png'
+  theme: 'blue'
+

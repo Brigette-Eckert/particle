@@ -4,7 +4,13 @@
 
   {% block column_1 %}
     <h1>BubbleCards</h1>
+    <div class="bubblecards">
+      {% include '@molecules/bubblecard/_bubblecard.twig' with bubblecard1 %}
+      {% include '@molecules/bubblecard/_bubblecard.twig' with bubblecard2 %}
+      {% include '@molecules/bubblecard/_bubblecard.twig' with bubblecard3 %}
+      {% include '@molecules/bubblecard/_bubblecard.twig' with bubblecard4 %}
+    </div>
 
-    {% include '@molecules/bubblecard/_bubblecard.twig' with bubblecard1 %}
+
 
   {% endblock column_1 %}
