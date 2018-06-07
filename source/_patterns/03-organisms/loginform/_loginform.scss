@@ -1,0 +1,17 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+.loginform {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #666;
+  padding: 20px;
+  button {
+    float: right;
+  }
+  h4 {
+    color: #fff;
+    padding: 20px;
+  }
+}
+

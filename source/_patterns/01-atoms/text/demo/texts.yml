@@ -1,0 +1,11 @@
+text1:
+  background: 'gold'
+  outline: 'silver'
+  placeholder: 'Hello World!'
+  display: 'inline'
+
+text2:
+  background: 'blue'
+  outline: 'orange'
+  placeholder: 'I like cats!'
+  display: 'full'

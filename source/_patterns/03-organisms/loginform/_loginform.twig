@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * loginform
+ *
+ * Available variables for loginform:
+ *    - loginform.variable_name [variable_type]: Description of the variable. Example below.
+ *    - loginform.invert [bool]: When set, colors will be inverted for light display on dark background.
+ */
+#}
+{# WIP #}
+
+<div class="loginform">
+    <h4>Login</h4>
+    <form action="">
+        {% include '@atoms/text/_text.twig' with {
+            background: 'blue',
+            outline: 'silver',
+            placeholder: 'Username',
+            display: 'full'
+        } %}
+        {% include '@atoms/text/_text.twig' with {
+            background: 'blue',
+            outline: 'silver',
+            placeholder: 'Password',
+            text_other_attributes: 'type="password"',
+            display: 'full'
+        } %}
+        {% include '@atoms/button/_button.twig' with {
+            button_color: 'primary',
+            button_text: 'Submit',
+            button_type: 'submit'
+        } %}
+    </form>
+</div>

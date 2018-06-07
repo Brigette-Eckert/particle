@@ -1,0 +1,39 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+
+// WIP
+//@each $key, $val in $colors {
+//  .text.background-#{key} {
+//    background-color: $val;
+//  }
+//}
+
+.text {
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  &.display-full {
+    width: 100%;
+    margin: 6px;
+    display: block;
+  }
+  &::placeholder {
+    color: #fff;
+  }
+  &.background-gold {
+    background-color: gold;
+  }
+
+  &.background-blue {
+    background-color: cornflowerblue;
+  }
+  &.outline-silver {
+    border-color: silver;
+  }
+
+  &.outline-orange {
+    border-color: orange;
+  }
+
+}

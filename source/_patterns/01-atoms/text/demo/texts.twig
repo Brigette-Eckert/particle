@@ -1,0 +1,12 @@
+{% extends '@atoms/grid/_grid-1-up.twig' %}
+  {% set container = true %}
+
+  {% block column_1 %}
+      <h1>Text</h1>
+      <div class="texts">
+          {% include '@atoms/_text.twig' with text1 %}
+          {% include '@atoms/_text.twig' with text2 %}
+      </div>
+
+  {% endblock column_1 %}
+
