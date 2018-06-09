@@ -33,7 +33,7 @@ if (!class_exists("Project_trans_Node")) {
 
       $compiler->write('echo ');
 
-      // Write the singular text parameter.
+      // Write the singular textbox parameter.
       $compiler->subcompile($singular);
 
       // End writing.
@@ -41,15 +41,15 @@ if (!class_exists("Project_trans_Node")) {
     }
 
     /**
-     * Extracts the text and tokens for the "trans" tag.
+     * Extracts the textbox and tokens for the "trans" tag.
      *
      * @param \Twig_Node $body
      *   The node to compile.
      *
      * @return array
      *   Returns an array containing the two following parameters:
-     *   - string $text
-     *       The extracted text.
+     *   - string $textbox
+     *       The extracted textbox.
      *   - array $tokens
      *       The extracted tokens as new \Twig_Node_Expression_Name instances.
      */
@@ -226,7 +226,7 @@ if (!class_exists("Project_trans_TokenParser")) {
         ) {
           continue;
         }
-        throw new \Twig_Error_Syntax(sprintf('The text to be translated with "trans" can only contain references to simple variables'), $lineno);
+        throw new \Twig_Error_Syntax(sprintf('The textbox to be translated with "trans" can only contain references to simple variables'), $lineno);
       }
     }
 

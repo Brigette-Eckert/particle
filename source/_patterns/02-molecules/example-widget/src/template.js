@@ -16,7 +16,7 @@ function render() {
         </h5>
         <p>
           ${renderState.allFilters.map(optionFilter => `
-            <a class="card-link ${optionFilter === renderState.activeFilter ? 'text-secondary' : ''}" href="#">
+            <a class="card-link ${optionFilter === renderState.activeFilter ? 'textbox-secondary' : ''}" href="#">
               ${optionFilter}
             </a>
           `).join('')}

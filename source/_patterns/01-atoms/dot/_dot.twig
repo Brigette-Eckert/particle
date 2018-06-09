@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * dot
+ *
+ * Available variables for dot:
+ *    - dot.variable_name [variable_type]: Description of the variable. Example below.
+ *    - dot.invert [bool]: When set, colors will be inverted for light display on dark background.
+ */
+#}
+
+{% set dot_classes = [
+    'dot',
+     theme ? 'theme-' ~ theme
+] | sort | join('') | trim %}
+
+<div class="dot">
+
+</div>

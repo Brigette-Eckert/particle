@@ -12,6 +12,7 @@ import * as grid from 'atoms/grid';
 import * as image from 'atoms/image';
 import * as icon from 'atoms/icon';
 import * as listGroup from 'atoms/list-group';
+import * as textbox from 'atoms/textbox';
 import * as bubbleCard from 'molecules/bubblecard';
 import * as nav from 'molecules/nav';
 import * as card from 'molecules/card';
@@ -24,7 +25,7 @@ import * as article from 'organisms/article';
 import * as footer from 'organisms/footer';
 import * as navbar from 'organisms/navbar';
 import * as basicPage from 'templates/basic-page';
-import * as text from 'atoms/text';
+
 
 const components = {
   alert,
@@ -37,6 +38,7 @@ const components = {
   image,
   icon,
   listGroup,
+  textbox,
   bubbleCard,
   nav,
   card,
@@ -49,7 +51,6 @@ const components = {
   footer,
   navbar,
   basicPage,
-  text,
 };
 /**
  * Default export of object containing all components

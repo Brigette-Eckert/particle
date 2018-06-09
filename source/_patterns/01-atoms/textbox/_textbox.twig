@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * textbox
+ *
+ * Available variables for textbox:
+ *    - textbox.variable_name [variable_type]: Description of the variable. Example below.
+ *    - textbox.invert [bool]: When set, colors will be inverted for light display on dark background.
+ */
+#}
+
+
+{% set textbox_classes = [
+    'textbox',
+    background ? 'background-' ~ background,
+    outline ? 'outline-' ~ outline,
+    display ? 'display-' ~ display,
+    textbox_other_classes
+] | sort | join(' ') | trim %}
+
+{% set textbox_attributes = [
+    placeholder ? 'placeholder="' ~ placeholder ~ '"',
+    text_other_attributes
+] | sort | join(' ') | trim %}
+
+<input class="{{ textbox_classes }}" {{ textbox_attributes }}>

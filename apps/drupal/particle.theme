@@ -56,7 +56,7 @@ function particle_preprocess_block__system_branding_block(&$variables) {
 function particle_preprocess_breadcrumb(&$variables) {
   if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
     $variables['breadcrumb'][] = [
-      'text' => $node->getTitle()
+      'textbox' => $node->getTitle()
     ];
   }
 }

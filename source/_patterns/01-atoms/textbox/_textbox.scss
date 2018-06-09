@@ -4,12 +4,12 @@
 
 // WIP
 //@each $key, $val in $colors {
-//  .text.background-#{key} {
+//  .textbox.background-#{key} {
 //    background-color: $val;
 //  }
 //}
 
-.text {
+.textbox {
   color: #fff;
   padding: 4px 8px;
   border-radius: 6px;

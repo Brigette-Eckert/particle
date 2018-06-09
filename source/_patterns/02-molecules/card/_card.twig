@@ -10,16 +10,16 @@
   card_image_location: String: top|bottom Indicates where the image is.
   card_image: Object:
     src: String: Path to image
-  card_image_overlay: String: The text overlay for an image (may require additional utilities).
+  card_image_overlay: String: The textbox overlay for an image (may require additional utilities).
   card_title: String: The title on the cared.
   card_subtitle: String: The subtitle on the card.
-  card_text: String: The text on the card.
+  card_text: String: The textbox on the card.
   text_color: String: primary|secondary|succes|danger|warning|info|light|dark Text color.
   card_link: String: The path to another URL.
-  card_link_text: String: The link's text.
+  card_link_text: String: The link's textbox.
   card_list: Number: The number of items in the list.
   list_item: Loop variable: Do not set.
-  card_footer: String: The text on the footer.
+  card_footer: String: The textbox on the footer.
 
   see https://getbootstrap.com/docs/4.0/components/card/ for more details
 #}
@@ -28,8 +28,8 @@
   'card',
   card_width ? 'w-' ~ card_width,
   card_cols ? card_cols : '',
-  text_alignment ? 'text-' ~ text_alignment,
-  text_color ? 'text-' ~ text_color,
+  text_alignment ? 'textbox-' ~ text_alignment,
+  text_color ? 'textbox-' ~ text_color,
   card_background ? 'bg-' ~ card_background,
   card_border ? 'border-' ~ card_border,
   card_other_classes,

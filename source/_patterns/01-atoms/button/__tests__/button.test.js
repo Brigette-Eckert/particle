@@ -5,7 +5,7 @@ test('button component is registered', () => {
   expect(name).toBe('button');
 });
 
-test('simple .text() is verified', () => {
+test('simple .textbox() is verified', () => {
   document.body.innerHTML = `
     <div>
       <button id="button">Click me!</button>

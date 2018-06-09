@@ -92,7 +92,7 @@ gulp.task('compile:twig-namespaces', () => gulp
  * writes a file to the root of dist/ so that Webpack can trigger a reload.
  */
 gulp.task('compile:pl:notify', (cb) => {
-  // Write to dist/ root a file named CHANGED.txt, casts Date to text, calls callback
+  // Write to dist/ root a file named CHANGED.txt, casts Date to textbox, calls callback
   fs.writeFile(path.resolve(__dirname, PATH_DIST, 'CHANGED.txt'), +new Date(), cb);
 });
 

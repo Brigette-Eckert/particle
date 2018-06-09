@@ -14,20 +14,20 @@ nav_items_responsive:
   - nav_item_text: Menu
     nav_item_link_other_classes:
       - flex-sm-fill
-      - text-sm-center
+      - textbox-sm-center
       - active
   - nav_item_text: Menu 2
     nav_item_link_other_classes:
       - flex-sm-fill
-      - text-sm-center
+      - textbox-sm-center
   - nav_item_text: Menu 3
     nav_item_link_other_classes:
       - flex-sm-fill
-      - text-sm-center
+      - textbox-sm-center
   - nav_item_text: Menu 4
     nav_item_link_other_classes:
       - flex-sm-fill
-      - text-sm-center
+      - textbox-sm-center
       - disabled
 
 nav_items_dropdown:

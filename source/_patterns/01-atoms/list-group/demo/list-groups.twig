@@ -36,7 +36,7 @@
         {% set color_items = [] %}
         {# Iterate over colors, since this is actually what we're demo'ing #}
         {% for color in colors %}
-          {# Inline object merged into random text object #}
+          {# Inline object merged into random textbox object #}
           {% set temp_item = { item_color: color } | merge(random(list_group_text.items)) %}
           {# Build up the color_items array #}
           {% set color_items = color_items|merge([temp_item]) %}

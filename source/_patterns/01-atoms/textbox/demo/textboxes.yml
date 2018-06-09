@@ -1,10 +1,10 @@
-text1:
+textbox1:
   background: 'gold'
   outline: 'silver'
   placeholder: 'Hello World!'
   display: 'inline'
 
-text2:
+textbox2:
   background: 'blue'
   outline: 'orange'
   placeholder: 'I like cats!'

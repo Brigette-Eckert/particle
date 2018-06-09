@@ -1,17 +1,17 @@
 /**
- * text
+ * dot
  */
 
 // Module dependencies
 import 'protons';
 
 // Module styles
-import './_text.scss';
+import './_dot.scss';
 
 // Module template
-import './_text.twig';
+import './_dot.twig';
 
-export const name = 'text';
+export const name = 'dot';
 
 export function disable() {}
 

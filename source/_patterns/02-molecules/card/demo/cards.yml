@@ -19,65 +19,65 @@ helper_card_blocks: "This example card uses twig's block system to override the 
 
 text_card_1:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_subtitle: Card subtitle
 
 text_card_2:
   text_alignment: center
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_subtitle: Card subtitle
   card_link: 'https://github.com/phase2/particle'
   card_link_text: 'Card link'
 
 text_card_3:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   text_color: danger
   card_flush: true
 
 card_width_1:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_width: 25
 
 card_width_2:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_width: 50
 
 card_width_3:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_width: 75
 
 top_image:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_image_location: top
 #  #  card_image is commented out to allow holderjs placeholder
 
 bottom_image:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_image_location: bottom
 #  #  card_image is commented out to allow holderjs placeholder
 
 overlay_image:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_image_overlay: Hi! I'm an overlay!
   card_image_location: top
 #  #  card_image is commented out to allow holderjs placeholder
 
 header_card:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_header: Header
 
 footer_card:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_footer: Footer
   button:
     button_text: click me!
@@ -85,7 +85,7 @@ footer_card:
 
 list_card:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   list:
     list_flush: True
     items:
@@ -107,7 +107,7 @@ card_background_2:
 
 card_background_3:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_background: success
   text_color: white
 
@@ -119,7 +119,7 @@ card_background_4:
 
 card_border_1:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_border: warning
   text_color: warning
 
@@ -136,6 +136,6 @@ card_border_3:
 
 card_border_4:
   card_title: Card Title
-  card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
+  card_text: Some quick example textbox to build on the card title and make up the bulk of the card's content.
   card_border: dark
   text_color: dark
