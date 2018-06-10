@@ -3,14 +3,16 @@
 
 {% block column_1 %}
     <h1> Dots with Links </h1>
-    <div class="dots">
+    <div class="dots links">
         {% include '@atoms/dot/_dot.twig' with dot1 %}
         {% include '@atoms/dot/_dot.twig' with dot2 %}
     </div>
+
     <h1> Dots without Links</h1>
-    <div>
-        {% include '@atoms/_dot.twig' with dot3 %}
-        {% include '@atoms/_dot.twig' with dot4 %}
+
+    <div class="dots no-links">
+        {% include '@atoms/dot/_dot.twig' with dot3 %}
+        {% include '@atoms/dot/_dot.twig' with dot4 %}
     </div>
 
 {% endblock column_1 %}

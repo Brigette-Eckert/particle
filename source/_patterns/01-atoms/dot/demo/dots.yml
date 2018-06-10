@@ -1,20 +1,21 @@
 dot1:
   text: 'Github'
   link: 'https://github.com/'
-
+  dot_element: 'a'
 
 dot2:
   text: 'Docs'
   link: 'https://phase2.github.io/frontend-docs/'
-  theme: 'blue'
+  background: 'blue'
   color: 'purple'
+  dot_element: 'a'
 
 dot3:
   text: 'Dogs'
-  theme: 'purple'
+  background: 'purple'
   color: 'sliver'
 
 dot4:
   text: 'Cats'
-  theme: 'green'
+  background: 'green'
   color: 'yellow'

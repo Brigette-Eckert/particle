@@ -14,26 +14,30 @@ $new-colors:(
 
 $themes: map-merge($new-colors, $colors);
 
-
+.dots {
+  display: flex;
+}
 
 .dot {
   font-family: "Lobster", cursive;
   font-size: 1.2em;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   padding: 20px 0;
+  margin: 5px;
   text-align: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   box-shadow: 1px 4px 4px #333;
+  border: none;
   &:hover {
     text-decoration: none;
   }
 }
 
 @each $key, $val in $new-colors {
-  .dot.theme-#{$key} {
+  .dot.background-#{$key} {
     background-color: $val;
   }
   .dot.color-#{$key} {

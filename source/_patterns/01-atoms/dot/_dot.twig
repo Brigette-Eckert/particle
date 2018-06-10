@@ -1,36 +1,30 @@
 {#
-/**
- * @file
- * dot
- *
- * Available variables for dot:
- *    - dot.variable_name [variable_type]: Description of the variable. Example below.
- *    - dot.invert [bool]: When set, colors will be inverted for light display on dark background
- */
-#}
-
-{#
-    Dot
-    theme:
-    dot_link: String: The html 'value' attribute.
-    dot_text: String: Display text on the dot.
+    Dots!
+    dot_element: String: 'a' if including links. Otherwise it defaults to 'button'
+    background: String: The background color of the dot element (pink, chartreuse, yellow, green, blue, purple, sliver, darkgrey)
+    color: String: The color of the text on the dot. (pink, chartreuse, yellow, green, blue, purple, sliver, darkgrey)
+    link: String: The html 'value' attribute.
+    text: String: Display text on the dot.
 
 #}
+
+{% set dot_element = dot_element | default ('button') %}
+
 
 {% set dot_classes = [
     'dot',
-     theme ? 'theme-' ~ theme : 'theme-' ~ 'pink',
-     color ? 'color-' ~ color: 'color-' ~ 'darkgrey',
+     background ? 'background-' ~ background : 'background-' ~ 'pink',
+     color ? 'color-' ~ color : 'color-' ~ 'darkgrey',
 
 ] | sort | join(' ') | trim %}
 
 {% set dot_attributes = [
-    link ? 'href=' ~ link
+    link ? 'href=' ~ link : ''
 ] | sort | join(' ') | trim %}
 
-<div class="{{ dot_classes }}" {{ dot_attributes }}>
+<{{ dot_element }} class="{{ dot_classes }}" {{ dot_attributes }}>
     {{ text }}
-</div>
+</{{ dot_element }}>
 
 
 {#TODO: add more color options or refactor to take string BBE #}
