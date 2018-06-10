@@ -1,6 +1,50 @@
 // All component Sass needs non-printing base config
 @import '../../00-protons/variables';
 
+$new-colors:(
+  "pink": #E91E63,
+  "chartreuse": #7FFF00,
+  "yellow": #FFF176,
+  "green": #4E9353,
+  "blue": #43BCCD,
+  "purple": #B10DC9,
+  "sliver": #c0c0c0,
+  "darkgrey": #303030
+);
+
+$themes: map-merge($new-colors, $colors);
+
+
+
 .dot {
+  font-family: "Lobster", cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 1px 4px 4px #333;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@each $key, $val in $new-colors {
+  .dot.theme-#{$key} {
+    background-color: $val;
+  }
+  .dot.color-#{$key} {
+    color: $val;
+  }
 
 }
+
+@media screen and (max-width: 425px) {
+  height: 56px;
+  width: 56px;
+  padding: 14px 0;
+}
+

@@ -1,1 +1,20 @@
-dot: ''
+dot1:
+  text: 'Github'
+  link: 'https://github.com/'
+
+
+dot2:
+  text: 'Docs'
+  link: 'https://phase2.github.io/frontend-docs/'
+  theme: 'blue'
+  color: 'purple'
+
+dot3:
+  text: 'Dogs'
+  theme: 'purple'
+  color: 'sliver'
+
+dot4:
+  text: 'Cats'
+  theme: 'green'
+  color: 'yellow'
