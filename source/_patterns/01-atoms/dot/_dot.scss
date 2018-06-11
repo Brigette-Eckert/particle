@@ -9,7 +9,8 @@ $new-colors:(
   "blue": #43BCCD,
   "purple": #B10DC9,
   "sliver": #c0c0c0,
-  "darkgrey": #303030
+  "darkgrey": #303030,
+  "white": #fff
 );
 
 $themes: map-merge($new-colors, $colors);

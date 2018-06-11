@@ -4,9 +4,13 @@
 $new-colors:(
   "pink": #E91E63,
   "chartreuse": #7FFF00,
+  "yellow": #FFF176,
   "green": #4E9353,
   "blue": #43BCCD,
-  "purple": #B10DC9
+  "purple": #B10DC9,
+  "sliver": #c0c0c0,
+  "darkgrey": #303030,
+  "white": #fff
 );
 
 $themes: map-merge($new-colors, $colors);
@@ -24,22 +28,24 @@ $themes: map-merge($new-colors, $colors);
   margin: 20px;
   background-position: center;
   background-size: cover;
-  position: relative;
-  height: 360px;
-  width: 360px;
-  border-radius: 50%;
-  padding: 20px 30px;
-  text-align: center;
-  h2 {
-    color: #FFF176;
-    font-family: "Lobster", cursive;
-    text-shadow: 2px 8px 8px #000;
-  }
-  p {
-    color: white;
-    font-weight: bold;
-    font-size: 1.6em;
-    text-shadow: 1px 4px 4px #333;
+  .circle-content {
+    position: relative;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    padding: 20px 30px;
+    text-align: center;
+    h2 {
+      //color: #FFF176;
+      font-family: "Lobster", cursive;
+      text-shadow: 2px 8px 8px #000;
+    }
+    p {
+      color: white;
+      font-weight: bold;
+      font-size: 1.6em;
+      text-shadow: 1px 4px 4px #333;
+    }
   }
 }
 
@@ -49,12 +55,14 @@ $themes: map-merge($new-colors, $colors);
     border: 20px inset $val;
     .circle-content {
       background-color: rgba($val, 0.2);
-      a {
-        //background-color: #930e3b;
-        background-color: darken($val, 20%);
-      }
     }
   }
+  .circle.title_color-#{$key} {
+    color: $val
+  }
+  //.circle.text_color-#{$key} {
+  //  color: $val
+  //}
 }
 
 @media screen and (max-width: 425px) {

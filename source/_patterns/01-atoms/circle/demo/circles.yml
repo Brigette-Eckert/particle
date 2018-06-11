@@ -3,21 +3,24 @@ circle1:
   description: 'Cats are funny'
   background: 'http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg'
   theme: 'purple'
+  title_color: 'blue'
+#  text_color: 'green'
 
 circle2:
   title: 'Dogs'
   description: 'Oh H*ck. He killed that watermelon'
   background: 'https://pbs.twimg.com/profile_images/846146544072101888/0sLpdiu1_400x400.jpg'
-  theme: 'pink'
 
 circle3:
-  title: 'fish'
-  description: 'blup'
-  background: 'https://s7d1.scene7.com/is/image/PETCO/1031740-left-1?$ProductDetail-large$'
+  title: 'Fish'
+  description: 'Splash Splash, Bloop Bloop'
   theme: 'blue'
+  title_color: 'purple'
+#  text_color: 'darkgrey'
 
 circle4:
   title: 'Bonobos'
   description: 'Your closest relative'
   background: 'http://2.bp.blogspot.com/-84wftlHbKRI/T63llKhTJ-I/AAAAAAAAFuI/plyOSa70XKs/s1600/bonobo-smiling.jpg'
   theme: 'green'
+  title_color: 'chartreuse'

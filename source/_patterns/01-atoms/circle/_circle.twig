@@ -1,15 +1,19 @@
 {#
 Large circluar cards
-theme:
+theme: String: The background color of the dot element (pink, chartreuse, yellow, green, blue, purple, sliver, darkgrey, white)
 background: String: url to background image you want to use
 title: String: Title that will appear at the top of the compontent
+title_color: String: Color of the title text (pink, chartreuse, yellow, green, blue, purple, sliver, darkgrey, white)
+text_color: String: Color of the description text (pink, chartreuse, yellow, green, blue, purple, sliver, darkgrey, white)
 description: String: Text that will appear in the body of the compontent
+
 
 #}
 
 {% set circle_classes = [
     'circle',
-    theme ? 'theme-' ~ theme : 'theme-pink'
+    theme ? 'theme-' ~ theme : 'theme-pink',
+    title_color ? 'title_color-' ~ title_color : 'title_color-yellow'
 ] | sort | join(' ') | trim %}
 
 {% set circle_attributes = [
@@ -17,6 +21,12 @@ description: String: Text that will appear in the body of the compontent
 ] | sort | join(' ') | trim %}
 
 <div class="{{ circle_classes }}" {{ circle_attributes }}>
-    <h2>{{ title }}</h2>
-    <p>{{description}}</p>
+    <div class="circle-content">
+        <h2>{{ title }}</h2>
+        <p>{{description}}</p>
+    </div>
 </div>
+
+
+{#TODO: Refactor to allow text color to be different than title color or white *default* BBE #}
+{#text_color ? 'text_color-' ~ text_color : 'text_color-white'#}
