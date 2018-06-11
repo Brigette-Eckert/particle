@@ -1,5 +1,5 @@
 import { name } from '../';
 
 test('textbox component is registered', () => {
-  expect(name).toBe('text');
+  expect(name).toBe('textbox');
 });

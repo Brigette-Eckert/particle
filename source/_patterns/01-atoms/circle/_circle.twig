@@ -1,0 +1,22 @@
+{#
+Large circluar cards
+theme:
+background: String: url to background image you want to use
+title: String: Title that will appear at the top of the compontent
+description: String: Text that will appear in the body of the compontent
+
+#}
+
+{% set circle_classes = [
+    'circle',
+    theme ? 'theme-' ~ theme : 'theme-pink'
+] | sort | join(' ') | trim %}
+
+{% set circle_attributes = [
+    background ? 'style="background-image: url(' ~ background ~ ')"'
+] | sort | join(' ') | trim %}
+
+<div class="{{ circle_classes }}" {{ circle_attributes }}>
+    <h2>{{ title }}</h2>
+    <p>{{description}}</p>
+</div>

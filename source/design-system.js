@@ -6,6 +6,7 @@ import * as alert from 'atoms/alert';
 import * as branding from 'atoms/branding';
 import * as breadcrumb from 'atoms/breadcrumb';
 import * as button from 'atoms/button';
+import * as circle from 'atoms/circle';
 import * as dropdown from 'atoms/dropdown';
 import * as gradientTag from 'atoms/gradienttag';
 import * as grid from 'atoms/grid';
@@ -32,6 +33,7 @@ const components = {
   branding,
   breadcrumb,
   button,
+  circle,
   dropdown,
   gradientTag,
   grid,

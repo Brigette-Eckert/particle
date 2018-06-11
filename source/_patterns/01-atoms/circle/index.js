@@ -1,17 +1,17 @@
 /**
- * textbox
+ * circle
  */
 
 // Module dependencies
 import 'protons';
 
 // Module styles
-import './_textbox.scss';
+import './_circle.scss';
 
 // Module template
-import './_textbox.twig';
+import './_circle.twig';
 
-export const name = 'textbox';
+export const name = 'circle';
 
 export function disable() {}
 

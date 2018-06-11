@@ -1,0 +1,78 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+$new-colors:(
+  "pink": #E91E63,
+  "chartreuse": #7FFF00,
+  "green": #4E9353,
+  "blue": #43BCCD,
+  "purple": #B10DC9
+);
+
+$themes: map-merge($new-colors, $colors);
+
+
+.circles {
+  display: flex;
+
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  padding: 20px 30px;
+  text-align: center;
+  h2 {
+    color: #FFF176;
+    font-family: "Lobster", cursive;
+    text-shadow: 2px 8px 8px #000;
+  }
+  p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 4px 4px #333;
+  }
+}
+
+
+@each $key, $val in $new-colors {
+  .circle.theme-#{$key} {
+    border: 20px inset $val;
+    .circle-content {
+      background-color: rgba($val, 0.2);
+      a {
+        //background-color: #930e3b;
+        background-color: darken($val, 20%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .circle {
+    background-size: 300px 300px;
+    height: 300px;
+    width: 300px;
+    .circle-content {
+      height: 260px;
+      width: 260px;
+      padding: 10px;
+      h2 {
+        margin: 10px 0;
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
