@@ -19,34 +19,37 @@
     {#<h2>{{title}}</h2>#}
     {#<p>{{description}}</p>#}
 
-  {% include '@atoms/circle/_circle.twig'
-      with {
-        title: title,
-        description: description,
-        theme: theme,
-        background: image
-      }
-  %}
-    {% include '@atoms/dot/_dot.twig'
-      with {
-        dot_element: 'a',
-        text: 'Github',
-        link: github_link,
-        color: 'white',
-        background: theme,
-        dot_other_classes: 'github'
+ <div class="bubblecard">
+   <div class="bubblecard-content">
+       {% include '@atoms/circle/_circle.twig'
+           with {
+           title: title,
+           description: description,
+           theme: theme,
+           background: image
+       }
+       %}
+       {% include '@atoms/dot/_dot.twig'
+           with {
+           dot_element: 'a',
+           text: 'Github',
+           link: github_link,
+           color: 'white',
+           background: theme,
+           dot_other_classes: 'github'
 
-    }
-    %}
-    {% include '@atoms/dot/_dot.twig'
-      with {
-        dot_element: 'a',
-        text: 'Website',
-        link: demo_link,
-        color: 'white',
-        background: theme,
-        dot_other_classes: 'link'
-      }
-    %}
-  </div>
-</div>
+       }
+       %}
+       {% include '@atoms/dot/_dot.twig'
+           with {
+           dot_element: 'a',
+           text: 'Website',
+           link: demo_link,
+           color: 'white',
+           background: theme,
+           dot_other_classes: 'link'
+       }
+       %}
+   </div>
+
+ </div>

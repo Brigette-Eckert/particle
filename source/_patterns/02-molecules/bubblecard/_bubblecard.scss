@@ -13,9 +13,8 @@ $themes: map-merge($new-colors, $colors);
 
 
 .bubblecards {
-  background-color: #222;
+  //background-color: #222;
   padding: 20px;
-
 }
 
 .bubblecard {
@@ -58,11 +57,11 @@ $themes: map-merge($new-colors, $colors);
         text-decoration: none;
       }
       &.github {
-        right: 50px;
-        bottom: -20px;
+        right: -82px;
+        bottom: -35px;
       }
       &.link {
-        right: -20px;
+        right: -110px;
         bottom: 50px;
       }
     }
@@ -103,11 +102,11 @@ $themes: map-merge($new-colors, $colors);
         width: 56px;
         padding: 14px 0;
         &.github {
-          right: 30px;
-          bottom: -20px;
+          right: -60px;
+          bottom: -40px;
         }
         &.link {
-          right: -20px;
+          right: -80px;
           bottom: 30px;
         }
       }
