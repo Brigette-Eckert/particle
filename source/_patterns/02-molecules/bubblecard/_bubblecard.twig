@@ -9,16 +9,44 @@
  */
 #}
 
-{% set bubblecard_classes = [
-  'bubblecard',
-  theme ? 'theme-' ~ theme
-] | sort | join(' ') | trim %}
+{#{% set bubblecard_classes = [#}
+  {#'bubblecard',#}
+  {#theme ? 'theme-' ~ theme#}
+{#] | sort | join(' ') | trim %}#}
 
-<div class="{{ bubblecard_classes }}" style="background-image: url('{{image}}')">
-  <div class="bubblecard-content">
-    <h2>{{title}}</h2>
-    <p>{{description}}</p>
-    <a class="github" target="_blank" href= "{{github_link}}">Github</a>
-    <a class="link" target="_blank" href="{{demo_link}}">Website</a>
+{#<div class="{{ bubblecard_classes }}" style="background-image: url('{{image}}')">#}
+  {#<div class="bubblecard-content">#}
+    {#<h2>{{title}}</h2>#}
+    {#<p>{{description}}</p>#}
+
+  {% include '@atoms/circle/_circle.twig'
+      with {
+        title: title,
+        description: description,
+        theme: theme,
+        background: image
+      }
+  %}
+    {% include '@atoms/dot/_dot.twig'
+      with {
+        dot_element: 'a',
+        text: 'Github',
+        link: github_link,
+        color: 'white',
+        background: theme,
+        dot_other_classes: 'github'
+
+    }
+    %}
+    {% include '@atoms/dot/_dot.twig'
+      with {
+        dot_element: 'a',
+        text: 'Website',
+        link: demo_link,
+        color: 'white',
+        background: theme,
+        dot_other_classes: 'link'
+      }
+    %}
   </div>
 </div>
